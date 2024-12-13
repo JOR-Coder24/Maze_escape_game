@@ -1,4 +1,4 @@
-# Maze Game with Player and Chaser
+# Maze Escape Game
 
 This is a Python-based maze game where a player-controlled red ball navigates a maze to reach the exit while being chased by a green ball. The green ball tracks the player's movements and tries to catch them. The game ends when the player touches the maze walls or is caught by the green ball.
 
