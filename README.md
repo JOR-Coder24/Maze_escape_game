@@ -1,22 +1,42 @@
-# Maze_escape_game
-Overview:
+# Maze Game with Player and Chaser
 
-This is a simple maze game created using Python and Pygame. The objective is to navigate a red ball through a maze to reach the exit while avoiding being caught by a green chaser ball.
+This is a Python-based maze game where a player-controlled red ball navigates a maze to reach the exit while being chased by a green ball. The green ball tracks the player's movements and tries to catch them. The game ends when the player touches the maze walls or is caught by the green ball.
 
-Features:
+## Features
+- **Player Control**: Move the red ball using arrow keys (left, right, up, down).
+- **Chasing AI**: A green ball follows the player, using BFS pathfinding to move towards the player.
+- **Maze Generation**: The maze is dynamically generated using a Depth-First Search (DFS) algorithm.
+- **Timer**: The game has a time limit of 90 seconds that resets when it runs out.
+- **Exit Objective**: The player must reach the exit to win the game.
+- **Collision Detection**: The game checks if the player collides with maze walls or is caught by the green ball.
 
-Maze Generation: The maze is generated using a depth-first search (DFS) algorithm.
+## Requirements
+- Python 3.x
+- Pygame library
 
-Player Control: Move the red ball using the arrow keys.
+## Installation
+1. Ensure you have Python installed on your system.
+2. Install Pygame via pip:
+   ```bash
+   pip install pygame
+   ```
 
-Chaser Ball: A green ball chases the red ball using breadth-first search (BFS) pathfinding.
+## How to Play
+1. Run the game by executing the script:
+   ```bash
+   python maze_game.py
+   ```
+2. Use the arrow keys to move the red ball.
+3. Avoid getting caught by the green ball.
+4. Reach the exit to win the game!
 
-Timer: The game resets every 90 seconds.
+## Controls
+- **Arrow Keys**: Move the red ball (player).
+- **Green Ball**: Chases the player using AI pathfinding.
 
-Collision Detection: The game ends if the red ball touches the maze walls or is caught by the green ball.
+## Reset Conditions
+- If the player collides with the maze walls or gets caught by the green ball, the game resets.
+- The game also resets when the 90-second timer runs out.
 
-
-
-Prerequisites:
-Python 3.x
-Pygame library
+## License
+This project is open-source and available under the MIT License.
